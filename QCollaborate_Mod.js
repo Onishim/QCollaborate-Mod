@@ -11,7 +11,9 @@ var autoload = false;
 
 var main_ctrl, main_scope, my_scope;
 
-$( document ).ready(function() {
+$( document ).on( "customReady", function(){
+    console.log('QCM >>', '----------Welcome to QCollaborate Mod----------');
+
     if (typeof user_favorite_views !== 'undefined' && user_favorite_views.length > 0) {
         favorite_views = user_favorite_views;
     }
@@ -21,10 +23,6 @@ $( document ).ready(function() {
     if (typeof user_autoload !== 'undefined') {
         autoload = user_autoload;
     }
-});
-
-$( document ).on( "customReady", function(){
-    console.log('QCM >>', '----------Welcome to QCollaborate Mod----------');
 
     main_ctrl = $('body>div[ng-app="qcollaborate"]>div.ng-scope>div[ng-controller="MainCtrl as $ctrl"]');
     main_scope = main_ctrl.scope();
