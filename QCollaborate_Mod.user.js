@@ -5,6 +5,7 @@
 // @description  Mods for QCollaborate
 // @author       Oni
 // @match        http://qcollaborate/*
+// @require      https://raw.githubusercontent.com/Onishim/QCollaborate-Mod/master/QCollaborate_Mod.js
 // @grant        log
 // ==/UserScript==
 
